@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ხვიჩა & ნინო — საქორწილო მოსაწვევი</title>
+<meta name="description" content="ხვიჩა და ნინო გიწვევთ ქორწილზე — 25 ოქტომბერი, 2026, ერა ჰოლი გონიო, ბათუმი">
+<meta property="og:title" content="ხვიჩა & ნინო — 25.10.2026">
+<meta property="og:description" content="დიდი სიხარულით გიწვევთ ჩვენი ცხოვრების ერთ-ერთი უმნიშვნელოვანესი დღის აღსანიშნავად.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FAF5EE">
+<link rel="preconnect" href="https://cdn.casino-files.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Serif+Georgian:wght@400;500;600;700&family=Noto+Sans+Georgian:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23A8615F'/%3E%3Ctext x='32' y='41' font-family='serif' font-size='28' fill='%23FAF5EE' text-anchor='middle'%3E%26%3C/text%3E%3C/svg%3E">
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --ivory:#FAF5EE;
+  --cream:#F4EADF;
+  --paper:#FFFDF9;
+  --blush:#F2D9D3;
+  --blush-2:#EAC3BB;
+  --rose:#C98B86;
+  --rose-deep:#A8615F;
+  --rosegold:#C3937C;
+  --gold:#B8902E;
+  --gold-2:#D9B65C;
+  --gold-light:#EBD9B4;
+  --sage:#93A892;
+  --forest:#27413A;
+  --ink:#3E342F;
+  --ink-soft:#7C6D65;
+  --line:#E7D9CC;
+
+  --serif-ka:'Noto Serif Georgian','Cormorant Garamond',Georgia,serif;
+  --sans-ka:'Noto Sans Georgian',system-ui,-apple-system,sans-serif;
+  --display:'Cormorant Garamond','Noto Serif Georgian',Georgia,serif;
+
+  --ease-out:cubic-bezier(.22,.61,.36,1);
+  --ease-soft:cubic-bezier(.4,0,.2,1);
+  --ease-lux:cubic-bezier(.2,.8,.2,1);
+  --shadow-card:0 18px 40px -24px rgba(62,52,47,.35);
+  --max:1120px;
+  --foil:linear-gradient(110deg,#9C7A2A 0%,#D9B65C 28%,#F6E7B4 48%,#D9B65C 66%,#9C7A2A 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans-ka);font-weight:300;color:var(--ink);background:var(--ivory);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.locked{overflow:hidden;height:100dvh}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+::selection{background:var(--blush-2);color:var(--ink)}
+:focus-visible{outline:2px solid var(--forest);outline-offset:3px;border-radius:4px}
+
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.55;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .28 0 0 0 0 .22 0 0 0 0 .18 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ============================================================
+   TYPE
+   ============================================================ */
+h1,h2,h3{font-family:var(--serif-ka);font-weight:500;line-height:1.15;color:var(--ink)}
+h2{font-size:clamp(1.9rem,4.4vw,3rem)}
+.foil{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%}
+.amp{font-family:var(--display);font-style:italic;font-weight:400}
+.lead{font-size:1.02rem;color:var(--ink-soft);max-width:56ch;margin-inline:auto}
+.orn{display:block;width:150px;height:auto;margin:.9rem auto 0;color:var(--rosegold)}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.wrap{width:min(100% - 2rem,var(--max));margin-inline:auto}
+section{position:relative;padding:clamp(4.5rem,9vw,7.5rem) 0}
+.section-head{text-align:center;margin-bottom:clamp(2.2rem,5vw,3.4rem)}
+.section-head .lead{margin-top:1rem}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity 1s var(--ease-out),transform 1s var(--ease-out)}
+.reveal.in{opacity:1;transform:none}
+
+.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:.55em;padding:.9em 1.8em;border-radius:999px;font-weight:500;font-size:.95rem;
+  background:var(--forest);color:var(--ivory);box-shadow:0 12px 26px -14px rgba(39,65,58,.7);transition:transform .25s var(--ease-out);min-height:48px}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.98)}
+.btn.ghost{background:transparent;color:var(--forest);box-shadow:none;border:1.5px solid var(--sage);min-height:44px;padding:.65em 1.25em;font-size:.9rem}
+.btn.ghost:hover{background:rgba(147,168,146,.14)}
+.btn svg{width:18px;height:18px;flex:none}
+
+.floral{position:absolute;pointer-events:none;z-index:0;user-select:none;height:auto}
+.wash{position:absolute;border-radius:50%;filter:blur(70px);opacity:.6;pointer-events:none;z-index:0}
+
+/* ============================================================
+   INTRO / ENVELOPE
+   ============================================================ */
+#intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center;overflow:hidden;
+  background:radial-gradient(110% 80% at 50% -10%,#F6E2DB 0%,transparent 60%),radial-gradient(80% 60% at 100% 100%,#E6EDE1 0%,transparent 55%),var(--ivory);
+  transition:opacity 1s var(--ease-soft),visibility 1s}
+#intro.gone{opacity:0;visibility:hidden;pointer-events:none}
+#intro .floral.tl{top:-9vmin;left:-10vmin;width:min(58vmin,520px);transform:rotate(-6deg)}
+#intro .floral.br{bottom:-10vmin;right:-11vmin;width:min(62vmin,560px);transform:rotate(176deg)}
+.intro-inner{position:relative;z-index:2;text-align:center;padding:1.2rem;width:min(100%,600px);transition:transform 1s var(--ease-lux),opacity .8s}
+#intro.leaving .intro-inner{transform:scale(1.06);opacity:0}
+.intro-names{font-family:var(--serif-ka);font-size:clamp(2rem,7vw,3rem);font-weight:500;line-height:1.1}
+.intro-names .amp{font-size:1.2em;margin:0 .08em}
+.intro-date{font-family:var(--display);font-size:1.2rem;letter-spacing:.3em;color:var(--ink-soft);margin-top:.35rem}
+.intro-guest{margin-top:1.2rem;font-size:1rem;color:var(--ink-soft)}
+.intro-guest b{font-weight:600;color:var(--ink);font-family:var(--serif-ka)}
+
+.envelope{--w:min(82vw,420px);--h:calc(var(--w)*.68);position:relative;width:var(--w);height:var(--h);margin:2.4rem auto 1.4rem;perspective:1500px;cursor:pointer;transition:transform .4s var(--ease-out)}
+.envelope:hover{transform:translateY(-4px)}
+.envelope.open{cursor:default}
+.env-back{position:absolute;inset:0;border-radius:12px;background:linear-gradient(180deg,#EFC8C0,#E5B4AB);box-shadow:0 30px 60px -30px rgba(62,52,47,.5)}
+.env-liner{position:absolute;inset:0;border-radius:12px;overflow:hidden;
+  background:#EFC9C1 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23B86F6A' stroke-width='1.1' opacity='.75'%3E%3Cpath d='M24 6c3 5 3 9 0 14-3-5-3-9 0-14zM6 24c5-3 9-3 14 0-5 3-9 3-14 0zM42 24c-5-3-9-3-14 0 5 3 9 3 14 0zM24 42c3-5 3-9 0-14-3 5-3 9 0 14z'/%3E%3C/g%3E%3Ccircle cx='24' cy='24' r='1.6' fill='%23C98B86' opacity='.8'/%3E%3Ccircle cx='0' cy='0' r='1' fill='%23D9B65C' opacity='.7'/%3E%3Ccircle cx='48' cy='48' r='1' fill='%23D9B65C' opacity='.7'/%3E%3C/svg%3E")}
+.env-letter{position:absolute;left:5%;right:5%;top:5%;height:93%;background:var(--paper);border-radius:8px;
+  box-shadow:0 10px 30px -16px rgba(62,52,47,.45);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:1.4rem 1rem;text-align:center;gap:.2rem;overflow:hidden;
+  transform:translateY(0);transition:transform 1.3s var(--ease-lux) .55s;z-index:1}
+.env-letter::before{content:"";position:absolute;inset:9px;border:1px solid var(--gold-light);border-radius:5px;pointer-events:none}
+.env-letter .ln{font-family:var(--serif-ka);font-size:1.5rem;font-weight:500;line-height:1.2;margin-top:.5rem}
+.env-letter .ld{font-family:var(--display);letter-spacing:.28em;color:var(--ink-soft);font-size:1rem}
+.env-letter .lt{font-size:.78rem;color:var(--ink-soft);margin-top:.5rem;max-width:26ch;line-height:1.5}
+.env-letter svg{width:84px;height:auto}
+.env-pocket{position:absolute;inset:0;border-radius:12px;z-index:2;background:linear-gradient(180deg,#F2D5CE 0%,#E9BFB6 100%);clip-path:polygon(0 0,50% 60%,100% 0,100% 100%,0 100%)}
+.env-pocket::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 49.6%,rgba(255,255,255,.18) 50%,transparent 50.8%),linear-gradient(225deg,transparent 49.6%,rgba(255,255,255,.18) 50%,transparent 50.8%)}
+.env-pocket::after{content:"";position:absolute;left:0;right:0;top:0;height:60%;background:linear-gradient(180deg,rgba(62,52,47,.16),transparent 60%);clip-path:polygon(0 0,50% 100%,100% 0)}
+.env-flap{position:absolute;left:0;right:0;top:0;height:62%;transform-origin:top center;z-index:4;transform:rotateX(0deg);transition:transform 1.1s var(--ease-soft);clip-path:polygon(0 0,100% 0,50% 100%);border-radius:12px 12px 0 0;background:linear-gradient(180deg,#F1CFC7 0%,#E3B0A6 100%)}
+.env-flap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.1));transition:opacity .2s}
+.env-flap.flipped{background:#EFC9C1 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23B86F6A' stroke-width='1.1' opacity='.75'%3E%3Cpath d='M24 6c3 5 3 9 0 14-3-5-3-9 0-14zM6 24c5-3 9-3 14 0-5 3-9 3-14 0zM42 24c-5-3-9-3-14 0 5 3 9 3 14 0zM24 42c3-5 3-9 0-14-3 5-3 9 0 14z'/%3E%3C/g%3E%3Ccircle cx='24' cy='24' r='1.6' fill='%23C98B86' opacity='.8'/%3E%3Ccircle cx='0' cy='0' r='1' fill='%23D9B65C' opacity='.7'/%3E%3Ccircle cx='48' cy='48' r='1' fill='%23D9B65C' opacity='.7'/%3E%3C/svg%3E");box-shadow:inset 0 -20px 30px -20px rgba(62,52,47,.35)}
+.env-flap.flipped::after{opacity:0}
+.env-seal{position:absolute;left:50%;top:62%;width:84px;height:84px;transform:translate(-50%,-50%);z-index:5;border-radius:50%;
+  background:radial-gradient(circle at 38% 30%,#C9706E 0%,#A24A49 45%,#7E3737 100%);
+  box-shadow:0 8px 18px -6px rgba(126,55,55,.7),inset 0 2px 4px rgba(255,255,255,.3),inset 0 -3px 6px rgba(0,0,0,.25);
+  display:grid;place-items:center;color:#F7DFD9;font-family:var(--serif-ka);font-size:1.2rem;font-weight:600;transition:transform .5s var(--ease-out),opacity .35s}
+.env-seal::before{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 70% 75%,transparent 55%,rgba(0,0,0,.08) 56%,transparent 70%),radial-gradient(circle at 20% 20%,rgba(255,255,255,.18),transparent 40%)}
+.env-seal::after{content:"";position:absolute;inset:8px;border-radius:50%;border:1.5px solid rgba(247,223,217,.4)}
+.env-seal span{position:relative;text-shadow:0 1px 0 rgba(0,0,0,.35)}
+.envelope:hover .env-seal{transform:translate(-50%,-50%) scale(1.05)}
+.envelope.cracking .env-seal{transform:translate(-50%,-50%) scale(1.14)}
+.envelope.open .env-seal{transform:translate(-50%,-50%) scale(0) rotate(25deg);opacity:0}
+.envelope.open .env-flap{transform:rotateX(-178deg);z-index:0;transition-delay:.15s}
+.envelope.open .env-letter{transform:translateY(-66%);z-index:3}
+.intro-hint{font-size:.85rem;color:var(--ink-soft);margin-top:.4rem}
+.intro-hint span{display:inline-block;animation:bob 1.8s infinite}
+@keyframes bob{50%{transform:translateY(3px)}}
+
+/* ============================================================
+   HERO — the locket
+   ============================================================ */
+#hero{min-height:100svh;display:flex;align-items:center;padding:clamp(5.5rem,11vw,8rem) 0 4rem;overflow:hidden;
+  background:radial-gradient(70% 55% at 50% 0%,#F7E4DE 0%,transparent 60%),radial-gradient(40% 35% at 95% 85%,#E8EFE3 0%,transparent 60%),var(--ivory)}
+#hero .floral.tl{top:-9vmin;left:-11vmin;width:min(36vmin,340px);transform:rotate(-8deg)}
+#hero .floral.tr{top:-8vmin;right:-11vmin;width:min(34vmin,320px);transform:scaleX(-1) rotate(-6deg)}
+#hero .floral.bl{bottom:-4vmin;left:-5vmin;width:min(34vmin,320px);transform:rotate(-20deg)}
+#hero .floral.br{bottom:-10vmin;right:-10vmin;width:min(52vmin,500px);transform:rotate(178deg)}
+.hero-in{position:relative;z-index:2;text-align:center;transform:scale(.97);opacity:0;transition:transform 1.4s var(--ease-lux),opacity 1.2s}
+body.started .hero-in{transform:none;opacity:1}
+.hero-story{font-family:var(--serif-ka);font-size:clamp(1rem,2.3vw,1.25rem);color:var(--rose-deep);margin-top:clamp(2.2rem,6vw,3rem)}
+.locket{position:relative;width:min(88vw,560px);aspect-ratio:1/1.12;margin:0 auto;border-radius:50%;
+  background:radial-gradient(60% 55% at 50% 40%,#FBEFEA 0%,#F3D9D2 70%,#EDCBC3 100%);
+  box-shadow:0 0 0 8px var(--ivory),0 0 0 9.5px #D9B65C,0 0 0 16px var(--ivory),0 0 0 17px rgba(217,182,92,.45),0 40px 80px -40px rgba(62,52,47,.45)}
+.locket::before{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(45% 20% at 50% 88%,rgba(147,168,146,.45),transparent 70%);pointer-events:none}
+.locket .kids{position:absolute;inset:0;border-radius:50%;overflow:hidden}
+.locket .ground{position:absolute;left:50%;bottom:8%;width:72%;height:10%;transform:translateX(-50%);border-radius:50%;background:radial-gradient(50% 50% at 50% 50%,rgba(62,52,47,.22),transparent 70%);filter:blur(6px)}
+.locket img{position:absolute;bottom:9%;height:72%;width:auto;max-width:none;filter:drop-shadow(0 16px 20px rgba(62,52,47,.28))}
+.locket img.groom{left:50%;transform:translateX(-96%)}
+.locket img.bride{left:50%;transform:translateX(2%)}
+.locket .garland{position:absolute;left:50%;top:-15%;width:124%;aspect-ratio:3/1;transform:translateX(-50%);pointer-events:none;z-index:3}
+.garland .g{position:absolute;height:auto;filter:drop-shadow(0 10px 14px rgba(62,52,47,.18));user-select:none}
+.garland .sprigL{left:1%;top:36%;width:25%;transform:rotate(-28deg) scaleX(-1)}
+.garland .sprigR{right:1%;top:34%;width:23%;transform:rotate(26deg)}
+.garland .magnolia{left:12%;top:30%;width:16%;transform:rotate(-24deg)}
+.garland .orange{right:11%;top:26%;width:16%;transform:rotate(18deg)}
+.garland .blossom{left:26%;top:16%;width:17%;transform:rotate(-8deg)}
+.garland .dahlia{left:52%;top:4%;width:23%;transform:rotate(8deg)}
+.garland .bud{left:36%;top:0;width:6%;transform:rotate(-18deg)}
+.garland .rose{left:34%;top:0;width:25%;transform:rotate(-6deg)}
+@media(prefers-reduced-motion:no-preference){
+  .garland .g{animation:sway 7s ease-in-out infinite}
+  .garland .sprigL{animation-delay:-1s}.garland .sprigR{animation-delay:-3s}.garland .dahlia{animation-delay:-2s}.garland .blossom{animation-delay:-4s}.garland .magnolia{animation-delay:-5s}.garland .orange{animation-delay:-2.5s}
+}
+@keyframes sway{0%,100%{translate:0 0}50%{translate:0 -4px}}
+.locket .cap{position:absolute;bottom:3%;font-family:var(--serif-ka);font-size:.8rem;color:var(--ink-soft);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.25em .8em;z-index:4;white-space:nowrap}
+.locket .cap.g{left:14%}.locket .cap.b{right:14%}
+.hero-names{font-family:var(--serif-ka);font-size:clamp(2.8rem,8.5vw,5.4rem);font-weight:600;line-height:1.05;margin:.5rem 0 .3rem;letter-spacing:-.01em}
+.hero-names .amp{font-size:1.1em;margin:0 .1em}
+.hero-date{font-family:var(--display);font-size:clamp(1.2rem,2.8vw,1.7rem);letter-spacing:.3em;color:var(--ink-soft);font-weight:500}
+.hero-sub{margin-top:.9rem;color:var(--ink-soft);font-size:1rem}
+.hero-sub b{font-family:var(--serif-ka);font-weight:600;color:var(--ink)}
+.scroll-cue{text-decoration:none;margin-top:2.2rem;display:inline-flex;flex-direction:column;align-items:center;gap:.4rem;color:var(--ink-soft);font-size:.78rem}
+.scroll-cue i{width:1px;height:40px;background:linear-gradient(var(--rosegold),transparent);display:block;animation:drip 2s infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media(min-width:720px){.locket{width:min(78vw,600px);aspect-ratio:1/1.02}.locket img{height:76%}}
+@media(prefers-reduced-motion:no-preference){body.started .foil.shimmer{animation:shimmer 5s linear 1.4s 1}}
+@keyframes shimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+
+/* ============================================================
+   COUNTDOWN
+   ============================================================ */
+#countdown{background:linear-gradient(180deg,var(--ivory),var(--cream));padding-top:clamp(3rem,6vw,5rem)}
+.count{display:flex;justify-content:center;align-items:flex-start;gap:clamp(.4rem,2vw,1.4rem);max-width:760px;margin:0 auto}
+.cell{text-align:center;flex:1 1 0;max-width:150px}
+.flap{position:relative;height:clamp(78px,20vw,124px);border-radius:16px;background:linear-gradient(180deg,#FFFDF9 0%,#F7EEE4 49.5%,#EFE2D4 50.5%,#F9F2EA 100%);
+  box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 0 0 1px var(--line),0 18px 36px -20px rgba(62,52,47,.45);overflow:hidden}
+.flap::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(217,182,92,.9),transparent);z-index:2}
+.flap::after{content:"";position:absolute;inset:0;border-radius:16px;box-shadow:inset 0 0 0 1px rgba(217,182,92,.25);pointer-events:none}
+.flap .num{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-size:clamp(2.6rem,9vw,5rem);font-weight:500;line-height:1;color:var(--forest);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.flap .num.tick{animation:flipdown .5s var(--ease-out)}
+@keyframes flipdown{0%{transform:perspective(600px) rotateX(70deg);opacity:0;transform-origin:50% 50%}100%{transform:none;opacity:1}}
+.cell .lab{display:block;margin-top:.7rem;font-family:var(--serif-ka);font-size:clamp(.78rem,2.2vw,.95rem);color:var(--rosegold);letter-spacing:.06em}
+.count .sep{font-family:var(--display);font-size:clamp(1.6rem,6vw,3rem);color:var(--gold-2);line-height:1;padding-top:clamp(22px,5.5vw,38px);flex:none}
+.count-note{text-align:center;margin-top:1.4rem;color:var(--ink-soft);font-family:var(--serif-ka);font-size:1.05rem}
+
+/* ============================================================
+   INVITATION
+   ============================================================ */
+#invite{overflow:hidden}
+#invite .floral.l{left:-6vmin;top:14%;width:min(34vmin,300px);transform:rotate(-30deg)}
+#invite .floral.l2{left:1vmin;top:54%;width:min(22vmin,200px);transform:rotate(-10deg)}
+#invite .floral.r{right:-5vmin;bottom:10%;width:min(32vmin,280px);transform:rotate(-150deg) scaleX(-1)}
+#invite .floral.r2{right:-3vmin;top:12%;width:min(26vmin,220px);transform:rotate(15deg) scaleX(-1)}
+.invite-card{position:relative;z-index:1;max-width:760px;margin:0 auto;background:var(--paper);border-radius:30px;padding:clamp(2.4rem,6vw,4rem) clamp(1.4rem,6vw,3.6rem);text-align:center;box-shadow:var(--shadow-card);border:1px solid var(--line)}
+.invite-card::before{content:"";position:absolute;inset:10px;border-radius:22px;border:1px solid rgba(217,182,92,.45);pointer-events:none}
+.invite-card .q{font-family:var(--display);font-size:5rem;line-height:.5;height:2.2rem;display:block;margin-bottom:.6rem}
+.invite-card p{font-family:var(--serif-ka);font-size:clamp(1.08rem,2.3vw,1.3rem);line-height:1.8;color:var(--ink);max-width:54ch;margin:0 auto}
+.invite-card p+p{margin-top:1.2em}
+.invite-sign{margin-top:1.8rem;font-family:var(--serif-ka);font-size:1.3rem;color:var(--rose-deep)}
+.parents{margin-top:1.6rem;display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center;color:var(--ink-soft);font-size:.9rem}
+.parents b{display:block;font-family:var(--serif-ka);color:var(--ink);font-weight:600;font-size:1rem}
+.parents .amp{font-size:1.6rem;color:var(--rose)}
+.parents[hidden]{display:none}
+
+/* ============================================================
+   SCHEDULE
+   ============================================================ */
+#schedule{background:linear-gradient(180deg,var(--cream),var(--ivory));overflow:hidden}
+#schedule .floral.tr{top:3vmin;right:-2vmin;width:min(26vmin,240px);transform:rotate(12deg)}
+#schedule .floral.tr2{top:-4vmin;right:-8vmin;width:min(34vmin,320px);transform:scaleX(-1) rotate(-50deg)}
+.timeline{position:relative;max-width:880px;margin:0 auto}
+.timeline::before{content:"";position:absolute;left:50%;top:40px;bottom:40px;width:1px;background:linear-gradient(transparent,var(--gold-2) 10%,var(--gold-2) 90%,transparent);transform:translateX(-50%)}
+.tl-item{position:relative;display:grid;grid-template-columns:1fr 110px 1fr;align-items:center;margin-bottom:clamp(1.6rem,3vw,2.2rem)}
+.tl-time{font-family:var(--display);font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:500;color:var(--forest);text-align:right;padding-right:1rem;letter-spacing:.04em}
+.tl-item:nth-child(even) .tl-time{grid-column:3;text-align:left;padding:0 0 0 1rem}
+.tl-item:nth-child(even) .tl-card{grid-column:1;grid-row:1}
+.medal{grid-column:2;grid-row:1;justify-self:center;width:94px;height:94px;border-radius:50%;background:var(--paper);display:grid;place-items:center;position:relative;z-index:1;
+  box-shadow:0 0 0 7px var(--ivory),0 0 0 8px rgba(217,182,92,.6),0 16px 30px -18px rgba(62,52,47,.4)}
+.medal svg{width:78px;height:78px}
+.tl-card{grid-column:3;grid-row:1;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:1.3rem 1.4rem;box-shadow:var(--shadow-card);position:relative;overflow:hidden}
+.tl-card::before{content:"";position:absolute;inset:6px;border-radius:17px;border:1px solid rgba(217,182,92,.35);pointer-events:none}
+.tl-card .tint{position:absolute;right:-30px;top:-30px;width:140px;height:140px;border-radius:50%;filter:blur(30px);opacity:.5;pointer-events:none}
+.tl-card h3{font-size:1.15rem;font-weight:600;margin-bottom:.25rem;position:relative}
+.tl-card .venue{color:var(--ink-soft);font-size:.93rem;display:flex;gap:.45rem;align-items:flex-start;position:relative}
+.tl-card .venue svg{width:16px;height:16px;flex:none;margin-top:.3em;color:var(--rose)}
+.tl-card .tl-time-m{display:none}
+.tl-card .btn{margin-top:.9rem;position:relative}
+
+/* ============================================================
+   FORMS (Fillout)
+   ============================================================ */
+#rsvp{overflow:hidden}
+#rsvp .floral.bl{bottom:-4vmin;left:-7vmin;width:min(36vmin,330px);transform:rotate(-10deg)}
+#rsvp .floral.bl2{bottom:12vmin;left:-3vmin;width:min(22vmin,200px);transform:rotate(-20deg)}
+#wishes{background:linear-gradient(180deg,var(--ivory),var(--cream));overflow:hidden}
+#wishes .floral.tr{top:-3vmin;right:-6vmin;width:min(22vmin,200px);transform:rotate(-15deg)}
+#wishes .floral.tr2{top:-6vmin;right:-9vmin;width:min(34vmin,320px);transform:scaleX(-1) rotate(-40deg)}
+#wishes .floral.tr3{top:12vmin;right:12vmin;width:min(7vmin,60px);transform:rotate(25deg)}
+.form-card{position:relative;z-index:1;max-width:680px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:30px;padding:clamp(1rem,3vw,1.6rem);box-shadow:var(--shadow-card)}
+.form-card::before{content:"";position:absolute;inset:8px;border-radius:24px;border:1px solid rgba(217,182,92,.4);pointer-events:none}
+.form-card .embed{position:relative;z-index:1;min-height:420px;border-radius:20px;overflow:hidden}
+.form-card .embed iframe{display:block;border:0;width:100%}
+.form-placeholder{min-height:420px;display:grid;place-items:center;text-align:center;color:var(--ink-soft);padding:2rem;border:1.5px dashed var(--line);border-radius:20px;font-family:var(--serif-ka);font-size:1.05rem}
+.form-placeholder svg{display:block;width:56px;height:56px;color:var(--rose);margin:0 auto 1rem}
+.wish-env{position:relative;max-width:680px;margin:0 auto;padding:1.3rem;border-radius:30px;background:linear-gradient(180deg,#F6E2DC,#EAC3BB);box-shadow:var(--shadow-card)}
+.wish-env::before{content:"";position:absolute;left:0;right:0;top:0;height:40%;background:linear-gradient(180deg,#EFCDC5,#E5B4AB);clip-path:polygon(0 0,100% 0,50% 100%);border-radius:30px 30px 0 0}
+.wish-env .form-card{margin:0;box-shadow:0 10px 26px -16px rgba(62,52,47,.4)}
+
+/* ============================================================
+   DETAILS / FOOTER
+   ============================================================ */
+#details{padding-bottom:0;overflow:hidden}
+.details-card{position:relative;max-width:820px;margin:0 auto;background:var(--forest);color:var(--ivory);border-radius:32px;padding:clamp(2.2rem,6vw,3.8rem) clamp(1.4rem,5vw,3rem);text-align:center;box-shadow:0 30px 60px -30px rgba(39,65,58,.8);overflow:hidden}
+.details-card::before{content:"";position:absolute;inset:10px;border-radius:24px;border:1px solid rgba(217,182,92,.5);pointer-events:none}
+.details-card .floral{opacity:.18;filter:saturate(.1) brightness(1.9)}
+.details-card .floral.a{top:-14%;left:-14%;width:54%;transform:rotate(-8deg)}
+.details-card .floral.b{bottom:-18%;right:-14%;width:58%;transform:rotate(176deg)}
+.details-card h2{color:var(--ivory);font-size:clamp(2.1rem,6vw,3.3rem);margin:.4rem 0 .3rem}
+.details-card .d-date{font-family:var(--display);font-size:clamp(1.25rem,3vw,1.8rem);letter-spacing:.25em;color:var(--gold-light)}
+.details-card .d-venue{margin-top:1.4rem;font-family:var(--serif-ka);font-size:1.2rem;font-weight:500}
+.details-card .d-addr{color:rgba(250,245,238,.75);font-size:.95rem;margin-top:.2rem}
+.details-card .d-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin-top:1.6rem;position:relative;z-index:1}
+.details-card .btn.light{background:var(--ivory);color:var(--forest)}
+.details-card .btn.outline{background:transparent;border:1.5px solid rgba(250,245,238,.5);box-shadow:none}
+.details-card .orn{color:var(--gold-2);margin:0 auto 1rem}
+footer{text-align:center;padding:2.6rem 1rem 3.2rem;color:var(--ink-soft);font-size:.85rem}
+footer .names{font-family:var(--serif-ka);font-size:1.15rem;color:var(--ink)}
+footer .borj{width:34px;height:34px;color:var(--rosegold);margin:.6rem auto .4rem;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ============================================================
+   FLOATING
+   ============================================================ */
+#petals{position:fixed;inset:0;z-index:50;pointer-events:none}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--rose),var(--gold-2));z-index:90;transition:width .1s linear}
+#music{position:fixed;right:max(1rem,env(safe-area-inset-right));bottom:max(1rem,env(safe-area-inset-bottom));z-index:60;width:50px;height:50px;border-radius:50%;
+  background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow-card);display:grid;place-items:center;color:var(--forest);opacity:0;transform:translateY(10px);transition:opacity .4s,transform .4s var(--ease-out)}
+#music.show{opacity:1;transform:none}
+#music .bars{display:flex;gap:3px;align-items:flex-end;height:16px}
+#music .bars i{width:3px;background:var(--forest);border-radius:2px;height:30%;animation:eq 1.1s infinite ease-in-out}
+#music .bars i:nth-child(2){animation-delay:.2s}#music .bars i:nth-child(3){animation-delay:.4s}
+#music[aria-pressed="false"] .bars i{animation:none;height:30%;opacity:.5}
+@keyframes eq{50%{height:100%}}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media(max-width:720px){
+  #hero .floral.tl,#hero .floral.tr{display:none}
+  #hero{padding-top:clamp(6.5rem,20vw,8rem)}
+  #wishes .floral.tr{top:-9vmin;right:-11vmin;width:30vmin}
+  #wishes .floral.tr2{top:-8vmin;right:-14vmin;width:40vmin}
+  #wishes .floral.tr3{display:none}
+  #invite .floral.l2{width:26vmin;left:-4vmin;top:auto;bottom:4%}
+  #invite .floral.r2{width:28vmin;top:4%}
+  .timeline::before{left:34px}
+  .tl-item,.tl-item:nth-child(even){grid-template-columns:68px 1fr}
+  .tl-time{display:none}
+  .medal,.tl-item:nth-child(even) .medal{grid-column:1;grid-row:1;width:68px;height:68px;align-self:start;box-shadow:0 0 0 5px var(--ivory),0 0 0 6px rgba(217,182,92,.6),0 12px 24px -14px rgba(62,52,47,.4)}
+  .medal svg{width:58px;height:58px}
+  .tl-card,.tl-item:nth-child(even) .tl-card{grid-column:2;grid-row:1;margin-left:.7rem}
+  .tl-card .tl-time-m{display:block;font-family:var(--display);font-size:1.5rem;color:var(--forest);font-weight:500;letter-spacing:.04em;position:relative}
+  .parents{grid-template-columns:1fr;gap:.3rem}
+  .locket .cap{font-size:.72rem}
+  .locket .cap.g{left:8%}.locket .cap.b{right:8%}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.2s!important;scroll-behavior:auto!important}
+  .reveal,.hero-in{opacity:1;transform:none}
+}
+</style>
+</head>
+<body class="locked">
+
+<div id="progress" aria-hidden="true"></div>
+
+<!-- ====================== INTRO / ENVELOPE ====================== -->
+<div id="intro" role="dialog" aria-label="მოსაწვევის გახსნა">
+  <img class="floral tl" src="https://cdn.casino-files.com/b75/promotions/2026/08/bouquet.webp" alt="" draggable="false">
+  <img class="floral br" src="https://cdn.casino-files.com/b75/promotions/2026/08/bouquet.webp" alt="" draggable="false">
+  <div class="intro-inner">
+    <div class="intro-names">ხვიჩა <span class="amp foil">&amp;</span> ნინო</div>
+    <div class="intro-date">25 · 10 · 2026</div>
+    <div class="intro-guest" id="guestLine">ძვირფასო სტუმარო, თქვენთვის გვაქვს მოსაწვევი</div>
+
+    <div class="envelope" id="envelope" tabindex="0" role="button" aria-label="კონვერტის გახსნა">
+      <div class="env-back"></div>
+      <div class="env-liner"></div>
+      <div class="env-letter" aria-hidden="true">
+        <svg viewBox="0 0 120 40"><use href="#divider"/></svg>
+        <div class="ln">ხვიჩა &amp; ნინო</div>
+        <div class="ld">25 · 10 · 2026</div>
+        <div class="lt">გეპატიჟებით ჩვენი ცხოვრების ყველაზე ლამაზ დღეზე</div>
+      </div>
+      <div class="env-pocket"></div>
+      <div class="env-flap"></div>
+      <div class="env-seal"><span>ხ&amp;ნ</span></div>
+    </div>
+    <div class="intro-hint">შეეხეთ ბეჭედს და გახსენით <span>🤍</span></div>
+  </div>
+</div>
+
+<main id="site">
+
+<!-- ====================== HERO ====================== -->
+<section id="hero">
+  <div class="wash" style="width:60vw;height:60vw;left:-20vw;top:-10vw;background:#F6DBD3"></div>
+  <div class="wash" style="width:50vw;height:50vw;right:-18vw;bottom:-10vw;background:#DCE7D7"></div>
+  <img class="floral tl" src="https://cdn.casino-files.com/b75/promotions/2026/08/bouquet.webp" alt="" draggable="false">
+  <img class="floral tr" src="https://cdn.casino-files.com/b75/promotions/2026/08/bouquet.webp" alt="" draggable="false">
+  <img class="floral bl" src="https://cdn.casino-files.com/b75/promotions/2026/08/sprig-l.webp" alt="" draggable="false">
+  <img class="floral br" src="https://cdn.casino-files.com/b75/promotions/2026/08/bouquet.webp" alt="" draggable="false">
+
+  <div class="wrap hero-in">
+    <div class="locket">
+      <div class="garland" aria-hidden="true">
+        <img class="g sprigL" src="https://cdn.casino-files.com/b75/promotions/2026/08/sprig-l.webp" alt=""><img class="g sprigR" src="https://cdn.casino-files.com/b75/promotions/2026/08/sprig-r.webp" alt="">
+        <img class="g magnolia" src="https://cdn.casino-files.com/b75/promotions/2026/08/magnolia.webp" alt=""><img class="g orange" src="https://cdn.casino-files.com/b75/promotions/2026/08/orange.webp" alt="">
+        <img class="g blossom" src="https://cdn.casino-files.com/b75/promotions/2026/08/blossom.webp" alt=""><img class="g dahlia" src="https://cdn.casino-files.com/b75/promotions/2026/08/dahlia.webp" alt="">
+        <img class="g bud" src="https://cdn.casino-files.com/b75/promotions/2026/08/bud.webp" alt=""><img class="g rose" src="https://cdn.casino-files.com/b75/promotions/2026/08/rose.webp" alt="">
+      </div>
+      <div class="kids">
+        <div class="ground"></div>
+        <img class="groom" src="https://cdn.casino-files.com/b75/promotions/2026/08/groom.webp" alt="პატარა ხვიჩა" width="472" height="1100" fetchpriority="high">
+        <img class="bride" src="https://cdn.casino-files.com/b75/promotions/2026/08/bride.webp" alt="პატარა ნინო" width="425" height="1100" fetchpriority="high">
+      </div>
+      <span class="cap g">ხვიჩა</span><span class="cap b">ნინო</span>
+    </div>
+    <div class="hero-story">ორი პატარა — ერთი დიდი სიყვარული</div>
+    <h1 class="hero-names"><span class="foil shimmer">ხვიჩა</span> <span class="amp foil">&amp;</span> <span class="foil shimmer">ნინო</span></h1>
+    <div class="hero-date">25 · 10 · 2026</div>
+    <p class="hero-sub">შაბათი, <b>18:00</b> — ერა ჰოლი გონიო, ბათუმი</p>
+    <a class="scroll-cue" href="#countdown">ქვემოთ <i></i></a>
+  </div>
+</section>
+
+<!-- ====================== COUNTDOWN ====================== -->
+<section id="countdown">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>ჩვენს დღემდე დარჩა</h2>
+      <svg class="orn" viewBox="0 0 120 40"><use href="#divider"/></svg>
+    </div>
+    <div class="count reveal" id="count" aria-live="polite">
+      <div class="cell"><div class="flap"><span class="num" data-u="d">—</span></div><span class="lab">დღე</span></div>
+      <span class="sep" aria-hidden="true">:</span>
+      <div class="cell"><div class="flap"><span class="num" data-u="h">—</span></div><span class="lab">საათი</span></div>
+      <span class="sep" aria-hidden="true">:</span>
+      <div class="cell"><div class="flap"><span class="num" data-u="m">—</span></div><span class="lab">წუთი</span></div>
+      <span class="sep" aria-hidden="true">:</span>
+      <div class="cell"><div class="flap"><span class="num" data-u="s">—</span></div><span class="lab">წამი</span></div>
+    </div>
+    <p class="count-note reveal" id="countNote">შაბათი, 25 ოქტომბერი, 2026</p>
+  </div>
+</section>
+
+<!-- ====================== INVITATION ====================== -->
+<section id="invite">
+  <img class="floral l" src="https://cdn.casino-files.com/b75/promotions/2026/08/sprig-l.webp" alt="" draggable="false">
+  <img class="floral l2" src="https://cdn.casino-files.com/b75/promotions/2026/08/rose.webp" alt="" draggable="false">
+  <img class="floral r" src="https://cdn.casino-files.com/b75/promotions/2026/08/sprig-r.webp" alt="" draggable="false">
+  <img class="floral r2" src="https://cdn.casino-files.com/b75/promotions/2026/08/orange.webp" alt="" draggable="false">
+  <div class="wrap">
+    <div class="invite-card reveal">
+      <span class="q foil" aria-hidden="true">“</span>
+      <p>დიდი სიხარულით გიწვევთ ჩვენი ცხოვრების ერთ-ერთი უმნიშვნელოვანესი დღის აღსანიშნავად.</p>
+      <p>ეს დღე თქვენს გარეშე წარმოუდგენელია. ამიტომ გვინდა ჩვენ ერთად იყოთ, გავიზიაროთ ეს განსაკუთრებული მომენტი და ერთად შევქმნათ მოგონებები, რომლებსაც კიდევ დიდხანს გავიხსენებთ.</p>
+      <div class="invite-sign">— ხვიჩა <span class="amp">&amp;</span> ნინო</div>
+      <div class="parents" id="parents" hidden>
+        <div><span>სიძის მშობლები</span><b id="groomParents"></b></div>
+        <span class="amp">&amp;</span>
+        <div><span>პატარძლის მშობლები</span><b id="brideParents"></b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== SCHEDULE ====================== -->
+<section id="schedule">
+  <img class="floral tr" src="https://cdn.casino-files.com/b75/promotions/2026/08/dahlia.webp" alt="" draggable="false">
+  <img class="floral tr2" src="https://cdn.casino-files.com/b75/promotions/2026/08/sprig-r.webp" alt="" draggable="false">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>დღის განრიგი</h2>
+      <svg class="orn" viewBox="0 0 120 40"><use href="#divider"/></svg>
+      <p class="lead">თითოეულ ეტაპთან ნახავთ ლოკაციას რუკაზე — რომ ყველგან დროულად და მარტივად მოხვიდეთ.</p>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ====================== RSVP ====================== -->
+<section id="rsvp">
+  <img class="floral bl" src="https://cdn.casino-files.com/b75/promotions/2026/08/sprig-l.webp" alt="" draggable="false">
+  <img class="floral bl2" src="https://cdn.casino-files.com/b75/promotions/2026/08/magnolia.webp" alt="" draggable="false">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>შეძლებთ მობრძანებას?</h2>
+      <svg class="orn" viewBox="0 0 120 40"><use href="#divider"/></svg>
+      <p class="lead">გთხოვთ, დაგვიდასტუროთ დასწრება — ეს დაგვეხმარება ყველაფერი იდეალურად დავგეგმოთ.</p>
+    </div>
+    <div class="form-card reveal"><div class="embed" id="rsvpEmbed"></div></div>
+  </div>
+</section>
+
+<!-- ====================== WISHES ====================== -->
+<section id="wishes">
+  <img class="floral tr" src="https://cdn.casino-files.com/b75/promotions/2026/08/blossom.webp" alt="" draggable="false">
+  <img class="floral tr2" src="https://cdn.casino-files.com/b75/promotions/2026/08/sprig-r.webp" alt="" draggable="false">
+  <img class="floral tr3" src="https://cdn.casino-files.com/b75/promotions/2026/08/bud.webp" alt="" draggable="false">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>სურვილების კონვერტი</h2>
+      <svg class="orn" viewBox="0 0 120 40"><use href="#divider"/></svg>
+      <p class="lead">დაგვიტოვეთ რამდენიმე თბილი სიტყვა — ყველა სურვილს ერთად წავიკითხავთ ქორწილის შემდეგ.</p>
+    </div>
+    <div class="wish-env reveal"><div class="form-card"><div class="embed" id="wishEmbed"></div></div></div>
+  </div>
+</section>
+
+<!-- ====================== DETAILS ====================== -->
+<section id="details">
+  <div class="wrap">
+    <div class="details-card reveal">
+      <img class="floral a" src="https://cdn.casino-files.com/b75/promotions/2026/08/bouquet.webp" alt="" draggable="false">
+      <img class="floral b" src="https://cdn.casino-files.com/b75/promotions/2026/08/bouquet.webp" alt="" draggable="false">
+      <svg class="orn" viewBox="0 0 120 40" aria-hidden="true"><use href="#divider"/></svg>
+      <h2>ხვიჩა <span class="amp foil">&amp;</span> ნინო</h2>
+      <div class="d-date">25.10.2026 / 18:00</div>
+      <div class="d-venue">სარიტუალო დარბაზი ერა ჰოლი გონიო</div>
+      <div class="d-addr">Era Hall Gonio — აფსაროსის ქ. 41, ბათუმი</div>
+      <div class="d-actions">
+        <a class="btn light" id="mainMap" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          რუკაზე ნახვა
+        </a>
+        <button class="btn outline" id="shareBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+          <span>გაზიარება</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="names">ხვიჩა <span class="amp">&amp;</span> ნინო</div>
+    <svg class="borj" viewBox="0 0 64 64" aria-hidden="true"><use href="#borjgali"/></svg>
+    <div>25 ოქტომბერი, 2026 · ბათუმი</div>
+  </footer>
+</section>
+</main>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+<button id="music" aria-pressed="false" aria-label="მუსიკა" hidden><span class="bars"><i></i><i></i><i></i></span></button>
+<audio id="audio" loop preload="none"></audio>
+
+<!-- ====================== SVG LIBRARY ====================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="gRose" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#F7DDD6"/><stop offset=".55" stop-color="#E7B4AC"/><stop offset="1" stop-color="#C98B86"/></radialGradient>
+    <radialGradient id="gRoseDeep" cx="45%" cy="40%" r="70%"><stop offset="0" stop-color="#E9B9B1"/><stop offset=".6" stop-color="#CF938D"/><stop offset="1" stop-color="#A8615F"/></radialGradient>
+    <radialGradient id="gPeach" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#FBEADF"/><stop offset=".6" stop-color="#F0C9B5"/><stop offset="1" stop-color="#D9A58F"/></radialGradient>
+    <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B9C9B3"/><stop offset="1" stop-color="#7E9A80"/></linearGradient>
+    <linearGradient id="gLeafDeep" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8FA58B"/><stop offset="1" stop-color="#5C7A62"/></linearGradient>
+    <linearGradient id="gFoil" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9C7A2A"/><stop offset=".45" stop-color="#F0DDA6"/><stop offset="1" stop-color="#B8902E"/></linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <filter id="wc" x="-30%" y="-30%" width="160%" height="160%"><feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="3" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="6"/><feGaussianBlur stdDeviation=".4"/></filter>
+
+    
+    
+    <symbol id="rose" viewBox="-50 -50 100 100"><defs><path id="pt0" d="M0 0C22.1 5.1 23.2 25.5 7.7 34.0C3.3 35.7 -3.3 35.7 -7.7 34.0C-23.2 25.5 -22.1 5.1 0 0Z" fill="url(#gRose)" stroke="#A8615F" stroke-opacity=".3" stroke-width=".7" stroke-linejoin="round"/><path id="pt1" d="M0 0C15.9 4.0 16.7 20.2 5.6 27.0C2.4 28.4 -2.4 28.4 -5.6 27.0C-16.7 20.2 -15.9 4.0 0 0Z" fill="url(#gRoseDeep)" stroke="#A8615F" stroke-opacity=".3" stroke-width=".7" stroke-linejoin="round"/><path id="pt2" d="M0 0C11.2 3.0 11.7 15.0 3.9 20.0C1.7 21.0 -1.7 21.0 -3.9 20.0C-11.7 15.0 -11.2 3.0 0 0Z" fill="url(#gRose)" stroke="#A8615F" stroke-opacity=".3" stroke-width=".7" stroke-linejoin="round"/><path id="pt3" d="M0 0C7.4 2.1 7.7 10.5 2.6 14.0C1.1 14.7 -1.1 14.7 -2.6 14.0C-7.7 10.5 -7.4 2.1 0 0Z" fill="url(#gRoseDeep)" stroke="#A8615F" stroke-opacity=".3" stroke-width=".7" stroke-linejoin="round"/><path id="pt4" d="M0 0C4.5 1.3 4.7 6.8 1.6 9.0C0.7 9.5 -0.7 9.5 -1.6 9.0C-4.7 6.8 -4.5 1.3 0 0Z" fill="url(#gRose)" stroke="#A8615F" stroke-opacity=".3" stroke-width=".7" stroke-linejoin="round"/></defs><circle r="44" fill="url(#gRose)" opacity=".5" filter="url(#soft)"/><g filter="url(#wc)"><use href="#pt0" transform="rotate(0.0) translate(0 10)"/><use href="#pt0" transform="rotate(45.0) translate(0 10)"/><use href="#pt0" transform="rotate(90.0) translate(0 10)"/><use href="#pt0" transform="rotate(135.0) translate(0 10)"/><use href="#pt0" transform="rotate(180.0) translate(0 10)"/><use href="#pt0" transform="rotate(225.0) translate(0 10)"/><use href="#pt0" transform="rotate(270.0) translate(0 10)"/><use href="#pt0" transform="rotate(315.0) translate(0 10)"/><use href="#pt1" transform="rotate(22.0) translate(0 7)"/><use href="#pt1" transform="rotate(73.4) translate(0 7)"/><use href="#pt1" transform="rotate(124.9) translate(0 7)"/><use href="#pt1" transform="rotate(176.3) translate(0 7)"/><use href="#pt1" transform="rotate(227.7) translate(0 7)"/><use href="#pt1" transform="rotate(279.1) translate(0 7)"/><use href="#pt1" transform="rotate(330.6) translate(0 7)"/><use href="#pt2" transform="rotate(40.0) translate(0 4)"/><use href="#pt2" transform="rotate(100.0) translate(0 4)"/><use href="#pt2" transform="rotate(160.0) translate(0 4)"/><use href="#pt2" transform="rotate(220.0) translate(0 4)"/><use href="#pt2" transform="rotate(280.0) translate(0 4)"/><use href="#pt2" transform="rotate(340.0) translate(0 4)"/><use href="#pt3" transform="rotate(60.0) translate(0 2)"/><use href="#pt3" transform="rotate(132.0) translate(0 2)"/><use href="#pt3" transform="rotate(204.0) translate(0 2)"/><use href="#pt3" transform="rotate(276.0) translate(0 2)"/><use href="#pt3" transform="rotate(348.0) translate(0 2)"/><use href="#pt4" transform="rotate(75.0) translate(0 0.5)"/><use href="#pt4" transform="rotate(165.0) translate(0 0.5)"/><use href="#pt4" transform="rotate(255.0) translate(0 0.5)"/><use href="#pt4" transform="rotate(345.0) translate(0 0.5)"/><circle r="2.4" fill="#A8615F" opacity=".8"/></g></symbol>
+    
+
+    
+
+    
+
+    
+
+    <symbol id="divider" viewBox="0 0 120 40">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M4 20 C 24 20, 36 20, 48 20"/><path d="M72 20 C 84 20, 96 20, 116 20"/><path d="M14 20 c 4 -6, 10 -6, 14 0 c -4 6, -10 6, -14 0"/><path d="M92 20 c 4 -6, 10 -6, 14 0 c -4 6, -10 6, -14 0"/></g>
+      <path d="M60 10 c -5 0, -8 4, -8 7 c 0 5, 8 11, 8 11 s 8 -6, 8 -11 c 0 -3, -3 -7, -8 -7z" fill="#C98B86"/>
+      <circle cx="40" cy="20" r="1.6" fill="#D9B65C"/><circle cx="80" cy="20" r="1.6" fill="#D9B65C"/>
+    </symbol>
+
+    <symbol id="borjgali" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M32 32 C 36 22, 40 14, 32 6"/><path d="M32 32 C 42 30, 50 27, 54 17"/><path d="M32 32 C 43 36, 50 42, 56 36"/><path d="M32 32 C 36 42, 40 50, 32 58"/><path d="M32 32 C 22 34, 14 37, 10 47"/><path d="M32 32 C 21 28, 14 22, 8 28"/><path d="M32 32 C 24 26, 18 18, 16 8"/></g><circle cx="32" cy="32" r="3" fill="currentColor"/>
+    </symbol>
+
+    <!-- schedule medallions -->
+    <symbol id="m-camera" viewBox="0 0 66 66">
+      <circle cx="36" cy="36" r="22" fill="#F2D9D3" opacity=".8" filter="url(#wc)"/>
+      <g fill="none" stroke="#27413A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="13" y="24" width="40" height="26" rx="4" fill="#FFFDF9"/><path d="M24 24l3-5h12l3 5"/><rect x="42" y="27" width="6" height="3" rx="1" fill="#D9B65C" stroke="none"/>
+        <circle cx="33" cy="37" r="8" fill="#F7E9E4"/><circle cx="33" cy="37" r="4.5" fill="#27413A" stroke="none" opacity=".85"/><circle cx="35" cy="35" r="1.3" fill="#fff" stroke="none"/>
+      </g>
+    </symbol>
+    <symbol id="m-church" viewBox="0 0 66 66">
+      <circle cx="30" cy="38" r="22" fill="#E8EFE3" opacity=".9" filter="url(#wc)"/>
+      <g fill="none" stroke="#27413A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M33 9v6M30 12h6"/>
+        <path d="M33 15 L23 30 H43 Z" fill="#C3937C" opacity=".9"/>
+        <rect x="25" y="30" width="16" height="10" fill="#FFFDF9"/>
+        <path d="M14 56 V44 L22 40 V56" fill="#FFFDF9"/><path d="M52 56 V44 L44 40 V56" fill="#FFFDF9"/>
+        <path d="M22 56 V40 H44 V56" fill="#FFFDF9"/><path d="M12 56h42"/>
+        <path d="M33 56v-9a3 3 0 0 0-6 0v9" fill="#A8615F" opacity=".8"/><path d="M39 56v-9a3 3 0 0 0-6 0v9" fill="#A8615F" opacity=".8"/>
+        <path d="M28 36h2M36 36h2" stroke="#A8615F"/>
+      </g>
+    </symbol>
+    <symbol id="m-rings" viewBox="0 0 66 66">
+      <circle cx="34" cy="36" r="22" fill="#F2D9D3" opacity=".8" filter="url(#wc)"/>
+      <g fill="none" stroke="#27413A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 56V30h6v-5h5v5h5v-5h5v5h5v26" fill="#FFFDF9"/><path d="M18 40h5v16" fill="#C3937C" opacity=".6"/><path d="M10 56h30"/>
+      </g>
+      <g fill="none" stroke-width="2.4" stroke="url(#gFoil)"><circle cx="43" cy="20" r="8"/><circle cx="52" cy="26" r="8"/></g>
+      <path d="M43 10l-2 3h4z" fill="#D9B65C"/>
+    </symbol>
+    <symbol id="m-dinner" viewBox="0 0 66 66">
+      <circle cx="33" cy="36" r="22" fill="#E8EFE3" opacity=".9" filter="url(#wc)"/>
+      <g fill="none" stroke="#27413A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 14c-4 10 0 18 6 18s10-8 6-18z" fill="#FFFDF9"/><path d="M24 32v16M18 48h12"/>
+        <path d="M36 14c-4 10 0 18 6 18s10-8 6-18z" fill="#FFFDF9"/><path d="M42 32v16M36 48h12"/>
+        <path d="M19 22c2 2 8 2 10 0" stroke="#C98B86"/><path d="M37 22c2 2 8 2 10 0" stroke="#C98B86"/>
+      </g>
+      <g fill="#D9B65C"><circle cx="31" cy="11" r="1.4"/><circle cx="35" cy="8" r="1"/><circle cx="33" cy="15" r="1"/></g>
+    </symbol>
+    <symbol id="m-cake" viewBox="0 0 66 66">
+      <circle cx="33" cy="38" r="22" fill="#F2D9D3" opacity=".8" filter="url(#wc)"/>
+      <g fill="none" stroke="#27413A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="14" y="44" width="38" height="12" rx="2" fill="#FFFDF9"/><rect x="20" y="32" width="26" height="12" rx="2" fill="#FFFDF9"/><rect x="26" y="21" width="14" height="11" rx="2" fill="#FFFDF9"/>
+        <path d="M20 36c2 3 4 3 6 0s4-3 6 0 4 3 6 0 4-3 6 0" stroke="#C98B86"/><path d="M14 48c2 3 4 3 6 0s4-3 6 0 4 3 6 0 4-3 6 0 4 3 6 0 4-3 6 0" stroke="#C98B86"/>
+        <path d="M33 21v-5"/>
+      </g>
+      <path d="M33 10c-2 2-2 4 0 6 2-2 2-4 0-6z" fill="#D9B65C"/>
+      <use href="#rose" x="27" y="4" width="12" height="12"/>
+    </symbol>
+    <symbol id="m-music" viewBox="0 0 66 66">
+      <circle cx="33" cy="36" r="22" fill="#EBD9B4" opacity=".75" filter="url(#wc)"/>
+      <g fill="none" stroke="#27413A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M26 44V18l20-5v26"/><path d="M26 22l20-5"/>
+        <ellipse cx="21" cy="45" rx="5.5" ry="4" fill="#C98B86" transform="rotate(-15 21 45)"/>
+        <ellipse cx="41" cy="40" rx="5.5" ry="4" fill="#C98B86" transform="rotate(-15 41 40)"/>
+      </g>
+      <g fill="#D9B65C"><path d="M53 20l1.4 3.6 3.6 1.4-3.6 1.4L53 30l-1.4-3.6-3.6-1.4 3.6-1.4z"/><path d="M14 24l1 2.4 2.4 1-2.4 1-1 2.4-1-2.4-2.4-1 2.4-1z"/><circle cx="52" cy="44" r="1.4"/><circle cx="12" cy="36" r="1.1"/></g>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+  </defs>
+</svg>
+
+<script>
+/* ============================================================
+   CONFIG — edit before deploying
+   ============================================================ */
+const CONFIG = {
+  weddingISO: '2026-10-25T18:00:00+04:00',
+  venueMapQuery: 'Era Hall Gonio, აფსაროსის ქ. 41, ბათუმი',
+  filloutRsvpId: 'g15VXEokYkus',   // from Fillout → Share → Embed
+  filloutWishesId: '7ttckpgoNDus',
+  musicSrc: '',             // e.g. 'assets/music.mp3' — empty = built-in soft piano loop
+  groomParents: '',         // e.g. 'გიორგი და მარიამი' — empty = hidden
+  brideParents: '',
+  schedule: [
+    { time:'13:00', title:'ფოტოსესია',               venue:'ხელოვნების მუზეუმი',                       icon:'m-camera', tint:'#F2D9D3', map:'ხელოვნების მუზეუმი, ბათუმი' },
+    { time:'14:00', title:'ჯვრისწერა',               venue:'ახალშენის ფერისცვალების სახელობის ტაძარი', icon:'m-church', tint:'#DCE7D7', map:'ახალშენის ფერისცვალების ტაძარი, ახალშენი, ხელვაჩაური' },
+    { time:'16:00', title:'ხელის მოწერის ცერემონია', venue:'გონიოს ციხე — ფოტოსესია',                  icon:'m-rings',  tint:'#EBD9B4', map:'გონიოს ციხე, გონიო' },
+    { time:'18:00', title:'საზეიმო ვახშამი',          venue:'ერა ჰოლი გონიო, აფსაროსის ქ. 41',          icon:'m-dinner', tint:'#F2D9D3', map:'Era Hall Gonio, აფსაროსის ქ. 41, ბათუმი' },
+    { time:'21:30', title:'ტორტის გაჭრის ცერემონია',  venue:'ერა ჰოლი გონიო',                           icon:'m-cake',   tint:'#DCE7D7', map:'Era Hall Gonio, აფსაროსის ქ. 41, ბათუმი' },
+    { time:'22:00', title:'დიჯეის პროგრამა',          venue:'ერა ჰოლი გონიო',                           icon:'m-music',  tint:'#EBD9B4', map:'Era Hall Gonio, აფსაროსის ქ. 41, ბათუმი' },
+  ],
+};
+
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mapsUrl = q => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
+const store = { get(k,d){ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):d; }catch{ return d; } }, set(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch{} } };
+
+/* ---------- guest name ---------- */
+(function(){
+  const p = new URLSearchParams(location.search);
+  const to = (p.get('to') || p.get('guest') || '').trim().slice(0,60);
+  if(to){ const el=$('#guestLine'); el.textContent=''; el.append('ძვირფასო '); const b=document.createElement('b'); b.textContent=to; el.append(b, ', თქვენთვის გვაქვს მოსაწვევი'); }
+})();
+
+/* ============================================================
+   AUDIO — synthesised SFX + soft piano loop (no files)
+   ============================================================ */
+const Audio_ = (()=>{
+  let ctx, master, reverb, musicGain, musicOn=false, schedTimer, nextNoteTime=0, step=0;
+  function ensure(){
+    if(ctx) return ctx;
+    const AC = window.AudioContext || window.webkitAudioContext; if(!AC) return null;
+    ctx = new AC();
+    master = ctx.createGain(); master.gain.value=.9; master.connect(ctx.destination);
+    reverb = ctx.createConvolver();
+    const len = ctx.sampleRate*2.6, buf = ctx.createBuffer(2,len,ctx.sampleRate);
+    for(let c=0;c<2;c++){ const d=buf.getChannelData(c); for(let i=0;i<len;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/len,2.8); }
+    reverb.buffer = buf;
+    const rg = ctx.createGain(); rg.gain.value=.35; reverb.connect(rg); rg.connect(master);
+    musicGain = ctx.createGain(); musicGain.gain.value=0; musicGain.connect(master); musicGain.connect(reverb);
+    return ctx;
+  }
+  function noise(dur){ const b=ctx.createBuffer(1,ctx.sampleRate*dur,ctx.sampleRate); const d=b.getChannelData(0); for(let i=0;i<d.length;i++) d[i]=Math.random()*2-1; const s=ctx.createBufferSource(); s.buffer=b; return s; }
+  function seal(){
+    if(!ensure()) return; const t=ctx.currentTime;
+    const n=noise(.25), f=ctx.createBiquadFilter(); f.type='bandpass'; f.frequency.value=2600; f.Q.value=.6;
+    const g=ctx.createGain(); g.gain.setValueAtTime(.001,t); g.gain.exponentialRampToValueAtTime(.5,t+.01); g.gain.exponentialRampToValueAtTime(.001,t+.22);
+    n.connect(f); f.connect(g); g.connect(master); g.connect(reverb); n.start(t);
+    const o=ctx.createOscillator(), og=ctx.createGain(); o.type='sine'; o.frequency.setValueAtTime(420,t); o.frequency.exponentialRampToValueAtTime(110,t+.14);
+    og.gain.setValueAtTime(.35,t); og.gain.exponentialRampToValueAtTime(.001,t+.18); o.connect(og); og.connect(master); o.start(t); o.stop(t+.2);
+  }
+  function paper(dur=.9, when=0){
+    if(!ensure()) return; const t=ctx.currentTime+when;
+    const n=noise(dur), f=ctx.createBiquadFilter(); f.type='bandpass'; f.frequency.setValueAtTime(900,t); f.frequency.linearRampToValueAtTime(2200,t+dur*.5); f.frequency.linearRampToValueAtTime(700,t+dur); f.Q.value=.9;
+    const g=ctx.createGain(); g.gain.setValueAtTime(.001,t);
+    const steps=14; for(let i=1;i<steps;i++){ g.gain.linearRampToValueAtTime((.08+Math.random()*.16)*Math.sin(Math.PI*i/steps), t+dur*i/steps); }
+    g.gain.linearRampToValueAtTime(.001,t+dur);
+    n.connect(f); f.connect(g); g.connect(master); n.start(t);
+  }
+  function whoosh(when=0){
+    if(!ensure()) return; const t=ctx.currentTime+when;
+    const n=noise(.9), f=ctx.createBiquadFilter(); f.type='lowpass'; f.frequency.setValueAtTime(300,t); f.frequency.exponentialRampToValueAtTime(2400,t+.35); f.frequency.exponentialRampToValueAtTime(250,t+.9);
+    const g=ctx.createGain(); g.gain.setValueAtTime(.001,t); g.gain.linearRampToValueAtTime(.18,t+.3); g.gain.linearRampToValueAtTime(.001,t+.9);
+    n.connect(f); f.connect(g); g.connect(master); g.connect(reverb); n.start(t);
+  }
+  /* soft piano-ish loop — F · Dm · Bb · C, arpeggiated, with a quiet pad */
+  const chords=[[53,57,60,65],[50,53,57,62],[46,50,53,58],[48,52,55,60]];
+  const pattern=[0,1,2,3,2,1,0,2];
+  const stepDur=.42;
+  const mtof=m=>440*Math.pow(2,(m-69)/12);
+  function pluck(midi,t,vel=.22){
+    const f=mtof(midi);
+    const o1=ctx.createOscillator(), o2=ctx.createOscillator(), g=ctx.createGain(), lp=ctx.createBiquadFilter();
+    o1.type='triangle'; o2.type='sine'; o1.frequency.value=f; o2.frequency.value=f*2; o2.detune.value=4;
+    lp.type='lowpass'; lp.frequency.setValueAtTime(2600,t); lp.frequency.exponentialRampToValueAtTime(700,t+1.4);
+    g.gain.setValueAtTime(.001,t); g.gain.exponentialRampToValueAtTime(vel,t+.015); g.gain.exponentialRampToValueAtTime(vel*.35,t+.35); g.gain.exponentialRampToValueAtTime(.001,t+1.8);
+    const g2=ctx.createGain(); g2.gain.value=.35; o2.connect(g2); g2.connect(lp); o1.connect(lp); lp.connect(g); g.connect(musicGain);
+    o1.start(t); o2.start(t); o1.stop(t+1.9); o2.stop(t+1.9);
+  }
+  function pad(midi,t,dur){
+    const o=ctx.createOscillator(), o2=ctx.createOscillator(), g=ctx.createGain(), lp=ctx.createBiquadFilter();
+    o.type='sine'; o2.type='sine'; o.frequency.value=mtof(midi-12); o2.frequency.value=mtof(midi-12); o2.detune.value=6; lp.type='lowpass'; lp.frequency.value=500;
+    g.gain.setValueAtTime(.001,t); g.gain.linearRampToValueAtTime(.06,t+1.2); g.gain.setValueAtTime(.06,t+dur-1); g.gain.linearRampToValueAtTime(.001,t+dur);
+    o.connect(lp); o2.connect(lp); lp.connect(g); g.connect(musicGain); o.start(t); o2.start(t); o.stop(t+dur+.1); o2.stop(t+dur+.1);
+  }
+  function scheduler(){
+    while(nextNoteTime < ctx.currentTime + .6){
+      const barIdx=Math.floor(step/pattern.length), bar=barIdx%chords.length, i=step%pattern.length, chord=chords[bar];
+      if(i===0) pad(chord[0], nextNoteTime, stepDur*pattern.length);
+      const oct=(barIdx%2)?12:0;
+      pluck(chord[pattern[i]]+oct+(i%4===3?12:0), nextNoteTime, i===0?.26:.18);
+      nextNoteTime+=stepDur; step++;
+    }
+    schedTimer=setTimeout(scheduler,120);
+  }
+  function startMusic(){
+    if(!ensure()||musicOn) return; musicOn=true; ctx.resume().catch(()=>{});
+    nextNoteTime=ctx.currentTime+.1; step=0; clearTimeout(schedTimer); scheduler();
+    musicGain.gain.cancelScheduledValues(ctx.currentTime); musicGain.gain.setValueAtTime(0,ctx.currentTime); musicGain.gain.linearRampToValueAtTime(.8,ctx.currentTime+2.5);
+  }
+  function stopMusic(){
+    if(!ctx||!musicOn) return; musicOn=false;
+    musicGain.gain.cancelScheduledValues(ctx.currentTime); musicGain.gain.setValueAtTime(musicGain.gain.value,ctx.currentTime); musicGain.gain.linearRampToValueAtTime(0,ctx.currentTime+.8);
+    setTimeout(()=>{ if(!musicOn) clearTimeout(schedTimer); },900);
+  }
+  return { ensure, seal, paper, whoosh, startMusic, stopMusic };
+})();
+
+/* ============================================================
+   ENVELOPE
+   ============================================================ */
+(function(){
+  const intro=$('#intro'), env=$('#envelope'); let opened=false;
+  function open(){
+    if(opened) return; opened=true;
+    Audio_.ensure();
+    env.classList.add('cracking');
+    setTimeout(()=>{ Audio_.seal(); env.classList.remove('cracking'); env.classList.add('open'); Audio_.paper(1.0,.15); Audio_.whoosh(.75); },160);
+    setTimeout(()=>env.querySelector('.env-flap').classList.add('flipped'), reduceMotion ? 170 : 870);
+    const total = reduceMotion ? 300 : 2400;
+    setTimeout(()=>intro.classList.add('leaving'), total-500);
+    setTimeout(()=>{ intro.classList.add('gone'); document.body.classList.remove('locked'); document.body.classList.add('started'); window.scrollTo(0,0); startSite(); }, total);
+  }
+  env.addEventListener('click', open);
+  env.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open(); } });
+})();
+
+let siteStarted=false;
+function startSite(){ if(siteStarted) return; siteStarted=true; initReveal(); initPetals(); initMusic(); }
+
+function initReveal(){
+  const els=$$('.reveal');
+  if(reduceMotion||!('IntersectionObserver' in window)){ els.forEach(e=>e.classList.add('in')); return; }
+  const io=new IntersectionObserver(es=>{ es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } }); },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(e=>io.observe(e));
+}
+addEventListener('scroll',()=>{ const h=document.documentElement; $('#progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'; },{passive:true});
+
+/* ---------- countdown / details ---------- */
+(function(){
+  const target=new Date(CONFIG.weddingISO).getTime();
+  const nums=Object.fromEntries($$('#count .num').map(n=>[n.dataset.u,n])); const prev={};
+  function set(u,v){ const s=String(v).padStart(2,'0'); if(prev[u]!==s){ nums[u].textContent=s; nums[u].classList.remove('tick'); void nums[u].offsetWidth; nums[u].classList.add('tick'); prev[u]=s; } }
+  function tick(){ const diff=target-Date.now(); if(diff<=0){ ['d','h','m','s'].forEach(u=>set(u,0)); $('#countNote').textContent='დღეს არის ის დღე! 🎉'; return; }
+    set('d',Math.floor(diff/864e5)); set('h',Math.floor(diff/36e5)%24); set('m',Math.floor(diff/6e4)%60); set('s',Math.floor(diff/1e3)%60); }
+  tick(); setInterval(tick,1000);
+  $('#mainMap').href=mapsUrl(CONFIG.venueMapQuery);
+  if(CONFIG.groomParents||CONFIG.brideParents){ $('#groomParents').textContent=CONFIG.groomParents; $('#brideParents').textContent=CONFIG.brideParents; $('#parents').hidden=false; }
+})();
+
+/* ---------- schedule ---------- */
+(function(){
+  const tl=$('#timeline');
+  CONFIG.schedule.forEach(it=>{
+    const item=document.createElement('div'); item.className='tl-item reveal';
+    item.innerHTML=`<div class="tl-time">${it.time}</div>
+      <div class="medal"><svg><use href="#${it.icon}"/></svg></div>
+      <div class="tl-card"><span class="tint" style="background:${it.tint}"></span>
+        <div class="tl-time-m">${it.time}</div><h3></h3>
+        <div class="venue"><svg><use href="#i-pin"/></svg><span></span></div>
+        <a class="btn ghost" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>რუკაზე ნახვა</a></div>`;
+    $('h3',item).textContent=it.title; $('.venue span',item).textContent=it.venue; $('a',item).href=mapsUrl(it.map);
+    tl.append(item);
+  });
+})();
+
+/* ---------- Fillout embeds ---------- */
+(function(){
+  const mk=(host,id,note)=>{
+    if(id){ const d=document.createElement('div'); d.style.width='100%'; d.style.minHeight='420px';
+      d.setAttribute('data-fillout-id',id); d.setAttribute('data-fillout-embed-type','standard'); d.setAttribute('data-fillout-inherit-parameters',''); d.setAttribute('data-fillout-dynamic-resize','');
+      host.append(d); return true; }
+    host.innerHTML=`<div class="form-placeholder"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>${note}</div></div>`; return false;
+  };
+  const a=mk($('#rsvpEmbed'),CONFIG.filloutRsvpId,'ფორმა მალე გამოჩნდება აქ');
+  const b=mk($('#wishEmbed'),CONFIG.filloutWishesId,'სურვილების ფორმა მალე გამოჩნდება აქ');
+  if(a||b){ const s=document.createElement('script'); s.src='https://server.fillout.com/embed/v1/'; s.async=true; document.body.append(s); }
+})();
+
+/* ---------- share ---------- */
+$('#shareBtn').addEventListener('click', async ()=>{
+  const url=location.origin+location.pathname, lbl=$('#shareBtn span');
+  if(navigator.share){ try{ await navigator.share({title:'ხვიჩა & ნინო — 25.10.2026', text:'საქორწილო მოსაწვევი', url}); return; }catch{} }
+  try{ await navigator.clipboard.writeText(url); lbl.textContent='ბმული დაკოპირდა'; setTimeout(()=>lbl.textContent='გაზიარება',2200); }catch{}
+});
+
+/* ---------- music ---------- */
+function initMusic(){
+  const b=$('#music'); b.hidden=false; setTimeout(()=>b.classList.add('show'),600);
+  const a=$('#audio'); const useFile=!!CONFIG.musicSrc;
+  const sync=on=>b.setAttribute('aria-pressed',String(on));
+  function play(){ if(useFile){ if(!a.src) a.src=CONFIG.musicSrc; a.volume=.5; a.play().then(()=>sync(true)).catch(()=>sync(false)); } else { Audio_.startMusic(); sync(true); } }
+  function pause(){ if(useFile) a.pause(); else Audio_.stopMusic(); sync(false); }
+  if(!store.get('muted',false)) play(); else sync(false);
+  b.addEventListener('click',()=>{ const on=b.getAttribute('aria-pressed')==='true'; if(on){ pause(); store.set('muted',true); } else { play(); store.set('muted',false); } });
+  document.addEventListener('visibilitychange',()=>{ if(document.hidden){ if(useFile) a.pause(); else Audio_.stopMusic(); } else if(!store.get('muted',false)) play(); });
+}
+
+/* ============================================================
+   PETALS — sprite-based, tumbling, 3 depth layers
+   ============================================================ */
+function initPetals(){
+  if(reduceMotion) return;
+  const c=$('#petals'), ctx=c.getContext('2d');
+  let W,H,DPR; function resize(){ DPR=Math.min(devicePixelRatio||1,2); W=innerWidth; H=innerHeight; c.width=W*DPR; c.height=H*DPR; c.style.width=W+'px'; c.style.height=H+'px'; ctx.setTransform(DPR,0,0,DPR,0,0); }
+  resize(); addEventListener('resize',resize);
+
+  const S=64;
+  function sprite(draw){ const o=document.createElement('canvas'); o.width=o.height=S*2; const x=o.getContext('2d'); x.scale(2,2); x.translate(S/2,S/2); draw(x); return o; }
+  const shapes=[
+    x=>{ const g=x.createRadialGradient(-6,-8,2,0,0,26); g.addColorStop(0,'#F3DCE1'); g.addColorStop(.6,'#D9A2AE'); g.addColorStop(1,'#B9788A'); x.fillStyle=g;
+         x.beginPath(); x.moveTo(0,-24); x.bezierCurveTo(16,-26,26,-8,20,8); x.bezierCurveTo(14,20,4,24,0,26); x.bezierCurveTo(-4,24,-14,20,-20,8); x.bezierCurveTo(-26,-8,-16,-26,0,-24); x.fill();
+         x.strokeStyle='rgba(168,97,95,.35)'; x.lineWidth=1; x.stroke(); x.strokeStyle='rgba(255,255,255,.5)'; x.beginPath(); x.moveTo(0,-14); x.quadraticCurveTo(2,0,0,18); x.stroke(); },
+    x=>{ const g=x.createLinearGradient(-14,-24,14,24); g.addColorStop(0,'#F1DADF'); g.addColorStop(1,'#C98B98'); x.fillStyle=g;
+         x.beginPath(); x.moveTo(0,-26); x.bezierCurveTo(18,-18,18,14,0,26); x.bezierCurveTo(-18,14,-18,-18,0,-26); x.fill(); x.strokeStyle='rgba(168,97,95,.3)'; x.lineWidth=1; x.stroke(); },
+    x=>{ for(let i=0;i<5;i++){ x.save(); x.rotate(i*Math.PI*2/5); const g=x.createRadialGradient(0,-10,2,0,-12,16); g.addColorStop(0,'#FBEFEA'); g.addColorStop(1,'#EFC3B8'); x.fillStyle=g;
+         x.beginPath(); x.moveTo(0,-2); x.bezierCurveTo(12,-6,14,-22,0,-26); x.bezierCurveTo(-14,-22,-12,-6,0,-2); x.fill(); x.strokeStyle='rgba(201,139,134,.35)'; x.lineWidth=.8; x.stroke(); x.restore(); }
+         x.fillStyle='#E3B67A'; x.beginPath(); x.arc(0,0,4.5,0,7); x.fill(); x.fillStyle='#C9A66B'; x.beginPath(); x.arc(0,0,2.2,0,7); x.fill(); },
+    x=>{ const g=x.createRadialGradient(-4,-6,2,0,0,26); g.addColorStop(0,'#FBEBDD'); g.addColorStop(.7,'#EFC3A0'); g.addColorStop(1,'#D9A070'); x.fillStyle=g;
+         x.beginPath(); x.moveTo(0,-24); x.bezierCurveTo(20,-22,24,4,14,16); x.bezierCurveTo(6,24,-6,24,-14,16); x.bezierCurveTo(-24,4,-20,-22,0,-24); x.fill(); x.strokeStyle='rgba(219,164,142,.4)'; x.lineWidth=1; x.stroke(); },
+  ];
+  const sprites=shapes.map(sprite);
+  // real illustrated blossom + bud mixed in (loaded async; drawn once ready)
+  [['https://cdn.casino-files.com/b75/promotions/2026/08/blossom.webp',2],['https://cdn.casino-files.com/b75/promotions/2026/08/bud.webp',1]].forEach(([src,n])=>{ const im=new Image(); im.onload=()=>{ const o=document.createElement('canvas'); o.width=o.height=S*2; const x=o.getContext('2d'); const r=Math.min((S*2-8)/im.width,(S*2-8)/im.height); const w=im.width*r,hh=im.height*r; x.drawImage(im,(S*2-w)/2,(S*2-hh)/2,w,hh); for(let i=0;i<n;i++) sprites.push(o); const f=document.createElement('canvas'); f.width=f.height=S*2; const fx=f.getContext('2d'); fx.filter='blur(1.6px)'; fx.drawImage(o,0,0); for(let i=0;i<n;i++) far.push(f); }; im.src=src; });
+  const far=sprites.map(s=>{ const o=document.createElement('canvas'); o.width=o.height=S*2; const x=o.getContext('2d'); x.filter='blur(1.6px)'; x.drawImage(s,0,0); return o; });
+
+  const total=Math.round(Math.min(W,1100)/18)+22;
+  const layers=[{n:Math.round(total*.4),size:[9,14],alpha:.4,vy:[.35,.6],far:true},{n:Math.round(total*.35),size:[15,22],alpha:.75,vy:[.6,1.0],far:false},{n:Math.round(total*.25),size:[24,36],alpha:.95,vy:[1.0,1.6],far:false}];
+  const petals=[]; const rnd=(a,b)=>a+Math.random()*(b-a);
+  function mk(L,init){ return { L, img:(L.far?far:sprites)[Math.floor(Math.random()*sprites.length)], x:rnd(-20,W+20), y:init?rnd(-H,H):rnd(-80,-30), s:rnd(L.size[0],L.size[1]), vy:rnd(L.vy[0],L.vy[1]), vx:rnd(-.25,.25),
+    roll:rnd(0,6.28), vroll:rnd(-.012,.012), spin:rnd(0,6.28), vspin:rnd(.015,.04), spin2:rnd(0,6.28), vspin2:rnd(.01,.03), sway:rnd(0,6.28), swf:rnd(.6,1.4), swa:rnd(.4,1.3) }; }
+  layers.forEach(L=>{ for(let i=0;i<L.n;i++) petals.push(mk(L,true)); });
+  let last=0, windT=0, paused=false;
+  document.addEventListener('visibilitychange',()=>{ paused=document.hidden; if(!paused){ last=performance.now(); requestAnimationFrame(loop); } });
+  function loop(t){
+    if(paused) return;
+    const dt=Math.min(32,t-last)/16.67; last=t;
+    windT+=dt/60; const wind=Math.sin(windT*.35)*.35+Math.sin(windT*.11)*.2;
+    ctx.clearRect(0,0,W,H);
+    for(let i=0;i<petals.length;i++){
+      const p=petals[i];
+      p.y+=p.vy*dt; p.x+=(p.vx+wind*(p.s/20)+Math.sin(t/1000*p.swf+p.sway)*p.swa*.5)*dt;
+      p.roll+=p.vroll*dt; p.spin+=p.vspin*dt; p.spin2+=p.vspin2*dt;
+      if(p.y>H+40||p.x<-60||p.x>W+60){ petals[i]=mk(p.L,false); continue; }
+      const sx=Math.cos(p.spin), sy=.82+.18*Math.sin(p.spin2);
+      ctx.save(); ctx.globalAlpha=p.L.alpha; ctx.translate(p.x,p.y); ctx.rotate(p.roll); ctx.scale(sx,sy);
+      const d=p.s*2; ctx.drawImage(p.img,-d/2,-d/2,d,d); ctx.restore();
+    }
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+}
+</script>
+</body>
+</html>
